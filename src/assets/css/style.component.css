@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box-container {
+  width: 100%;
+  box-sizing: border-box;
+  height: 74vh;
+}
+
+h2 {
+  background-color: #3769ce;
+  color: #fff;
+  padding: 15px;
+}
+
+/**************** Truck component ******************/
+
+.truck-container {
+  padding: 15px;
+}
+
+.truck-container-tab {
+  display: flex;
+  gap: 20px;
+}
+
+.truck-container-tab a {
+  color: #000;
+  text-decoration: none;
+  letter-spacing: 1px;
+  padding: 10px;
+}
+
+.truck-container-tab li a.active {
+  border-bottom: 2px solid #3769ce;
+}
+
+.truck-container-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  border-bottom: 1px solid #ddd;
+}
+
+.truck-container-head button {
+  border: none;
+  padding: 8px;
+  background-color: #ef8c0b;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.search-container i {
+  position: absolute;
+  left: 10px;
+  color: #ccc;
+}
+
+.search-container input[type="text"] {
+  padding-left: 30px;
+  width: 300px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+}
+
+.modal-dialog {
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-header {
+  position: relative;
+  background-color: #3769ce;
+  color: #fff;
+  padding: 10px 30px;
+}
+
+.modal-header h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 10px;
+  letter-spacing: 0.8px;
+}
+
+.model-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: scroll;
+}
+
+.btn-close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 1.2rem;
+}
+
+.modal-content .modal-header .btn-close:hover {
+  color: #fff;
+}
+
+.modal-dialog {
+  max-width: 75% !important;
+}
+
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1 1 calc(33.333% - 20px);
+}
+
+.btn-primary {
+  margin-top: 20px;
+}
+
+.form-container button.btn {
+  width: 25% !important;
+  margin: auto;
+  background-color: #ef8c0b;
+  border: none;
+  color: #fff;
+  font-size: 15px !important;
+  letter-spacing: 0.8px;
+  padding: 10px;
+}
+
+.form-container .form-group input.form-control:focus,
+.form-container .form-group select.form-select:focus {
+  border-color: #7e7e7e !important;
+  box-shadow: none !important;
+}
+
+.form-select {
+  margin-top: 5px;
+}
+
+.form-control {
+  margin-top: 5px;
+}
+
+.form-container .form-group label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.form-container .form-group select {
+  font-size: 14px;
+}
+
+.form-container .form-group input[type="date"] {
+  font-size: 14px;
+}
+
+.table-container {
+  padding: 0 !important;
+  margin: 20px 0px !important;
+}
+
+.table {
+  overflow-y: scroll !important;
+}
+
+.table tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.table thead th {
+  background-color: #3769ce !important;
+  color: #fff;
+  padding: 15px 10px;
+}
+
+/************Driver Component **************/
+.driver-container {
+  display: flex;
+  justify-content: end;
+}
+
+.driver-container button {
+  border: 1px solid #ddd;
+  margin: 10px 30px;
+  padding: 8px;
+  color: #000;
+  border-radius: 15px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  background: none !important;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+.driver-container button:hover {
+  background-color: #3769ce !important;
+  color: #fff;
+}
+
+.driver-details {
+  padding: 30px 30px !important;
+}
+
+.driver-details .table {
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px; 
+}
+
+.table tr td {
+  padding: 15px 10px;
+}
+
+.box-icon::before {
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #dcdada;
+  margin-right: 5px;
+}
+
+.circle-icon::before {
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #b6b5b5;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.add-driver-container {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 50px 50px !important;
+  margin: 20px 20px !important;
+}
+
+.add-driver-container .form-group input.form-control:focus,
+  .add-driver-container .form-group select.form-select:focus {
+    border-color: #7e7e7e !important;
+    box-shadow: none !important;
+  }
+
+  .add-driver-container {
+    margin-top: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .shadow {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add box-shadow */
+  padding: 30px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .truck-container-tab {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .truck-container-tab a {
+    padding: 5px;
+    font-size: 12px;
+  }
+
+  .search-container input[type="text"] {
+    width: 100%;
+  }
+
+.form-container button.btn {
+  width: 50% !important;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+}

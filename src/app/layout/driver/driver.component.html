@@ -1,0 +1,82 @@
+<div class="box-container">
+  <div *ngIf="!showAddDriverForm">
+    <h2>Driver</h2>
+
+    <div class="driver-container">
+      <a routerLink="add-driver" routerLinkActive="active">
+        <button
+          type="button"
+          class="btn btn-primary"
+          (click)="addDriver($event)"
+        >
+          + Add Driver
+        </button>
+      </a>
+    </div>
+
+    <div class="driver-details">
+      <table class="table">
+        <thead>
+          <tr>
+            <th><span class="box-icon"></span></th>
+            <th>Name</th>
+            <th>Email Id</th>
+            <th>Contact No</th>
+            <th>User Status</th>
+            <th>Driver License</th>
+            <th>Adhar</th>
+            <th>Address</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let driver of driverData">
+            <td>
+              <input
+                type="checkbox"
+                [checked]="isSelected(driver.id!)"
+                (change)="onCheckboxChange($event, driver)"
+              />
+            </td>
+            <td>{{ driver.firstName }} {{ driver.lastName }}</td>
+            <td>{{ driver.email }}</td>
+            <td>{{ driver.mobileNo }}</td>
+            <td></td>
+            <td>
+              <a
+                [href]="driver.drivingLicense"
+                target="_blank"
+                *ngIf="driver.drivingLicense"
+                >view</a
+              >
+            </td>
+            <td>
+              <a [href]="driver.aadhar" target="_blank" *ngIf="driver.aadhar"
+                >view</a
+              >
+            </td>
+            <td>{{ driver.address }}</td>
+            <td>
+              <!-- Action Column -->
+              <button type="button" class="btn btn-sm" (click)="onEdit(driver)">
+                <i
+                  class="fas fa-edit"
+                  style="color: #646464; padding: 0px 5px; font-size: 18px"
+                ></i>
+              </button>
+              <button type="button" class="btn btn-sm" (click)="onDelete(driver)">
+                <i
+                  class="fas fa-trash-alt"
+                  style="color: #646464; padding: 0px 5px; font-size: 18px"
+                ></i>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div *ngIf="showAddDriverForm">
+    <router-outlet></router-outlet>
+  </div>
+</div>

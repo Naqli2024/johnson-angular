@@ -1,0 +1,45 @@
+
+  <h2>Add Driver</h2>
+  <div class="container-fluid">
+    <div class="row justify-content-center align-items-center mt-5">
+      <div class="col-md-11">
+        <form [formGroup]="driverForm" (ngSubmit)="onSubmit()" class="form-container driver-form shadow">
+          <div class="row">
+            <ng-container *ngFor="let field of formFields; let i = index">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label [for]="field.key">{{ field.label }}</label>
+                  <select
+                    [id]="field.key"
+                    [formControlName]="field.key"
+                    class="form-select"
+                    *ngIf="field.type === 'dropdown'"
+                  >
+                    <option value="" selected disabled>Select {{ field.label }}</option>
+                    <option *ngFor="let option of field.options" [value]="option.value">{{ option.label }}</option>
+                  </select>
+                  <input
+                    *ngIf="field.type !== 'dropdown'"
+                    [type]="field.type"
+                    [id]="field.key"
+                    [formControlName]="field.key"
+                    class="form-control"
+                  />
+                  <div *ngIf="driverForm.controls[field.key].invalid && driverForm.controls[field.key].touched" class="text-danger">
+                    {{ field.label }} is required.
+                  </div>
+                </div>
+              </div>
+              <!-- Add a new row after every second column -->
+              <div class="clearfix" *ngIf="(i + 1) % 2 === 0"></div>
+            </ng-container>
+          </div>
+          
+            <div class="col-md-12 text-center"> <!-- Center the button horizontally -->
+              <button type="submit" class="btn mt-3" style="width: 25%;" [disabled]="driverForm.invalid">Create Account</button> <!-- Set button width to 25% -->
+            </div>
+          
+        </form>
+      </div>
+    </div>
+  </div>

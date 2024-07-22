@@ -1,0 +1,53 @@
+.profile-container {
+    text-align: center;
+    background: #fff;
+    width: 290px; 
+    padding: 50px 0px 10px 0px;
+    background-image: url('/assets/images/profile-background.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+  }
+  
+  .profile-photo {
+    margin-bottom: 10px;
+  }
+  
+  .profile-photo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    border: 5px solid #3769ce;
+  }
+  
+  .profile-photo input {
+    display: none;
+  }
+  
+  .username {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+  }
+  
+  .edit-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #6c757d;
+    font-size: 10px;
+  }
+  
+  .edit-profile i {
+    margin-right: 5px;
+  }
+
+  @media (max-width: 767.98px) {
+    .profile-container {
+      width: 100%; 
+    }
+  }

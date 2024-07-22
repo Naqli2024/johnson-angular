@@ -1,0 +1,21 @@
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+h2 {
+  background-color: #3769ce;
+  color: #fff;
+  padding: 10px;
+}
+
+.col-lg-4 {
+  flex: 1;
+  padding: 10px;
+}
+
+.parent-box {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}

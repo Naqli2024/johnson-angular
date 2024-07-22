@@ -1,0 +1,47 @@
+<div class="box-container">
+  <h2>Trucks</h2>
+  <div class="truck-container">
+    <nav class="row">
+      <ul class="truck-container-head">
+        <div class="truck-container-tab">
+          <li>
+            <a routerLink="fleet-vehicle" routerLinkActive="active">Fleet Vehicle</a>
+          </li>
+          <li>
+            <a routerLink="summary" routerLinkActive="active">Summary</a>
+          </li>
+        </div>
+        <div>
+          <!-- Modal Trigger Button -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addTruckModal">
+            + Add Truck
+          </button>
+        </div>
+      </ul>
+    </nav>
+    <div class="row">
+      <div class="search-container">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Search..." [(ngModel)]="searchTerm" (ngModelChange)="onSearchTermChange()">
+      </div>
+    </div>
+    <div class="row">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="addTruckModal" tabindex="-1" aria-labelledby="addTruckModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered align-items-center" style="margin: auto">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="addTruckModalLabel">Add Truck</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <app-add-truck></app-add-truck>
+      </div>
+    </div>
+  </div>
+</div>

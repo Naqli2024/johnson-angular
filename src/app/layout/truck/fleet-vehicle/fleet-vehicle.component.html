@@ -1,0 +1,26 @@
+<div class="container-fluid table-container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Insurance Number</th>
+        <th>Insurance Start Date</th>
+        <th>Insurance End Date</th>
+        <th>RC Number</th>
+        <th>RC Start Date</th>
+        <th>RC End Date</th>
+        <th>Driver</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let truck of filteredData">
+        <td>{{ truck.insuranceNumber }}</td>
+        <td>{{ truck.insuranceStartDate }}</td>
+        <td>{{ truck.insuranceEndDate }}</td>
+        <td>{{ truck.rcNumber }}</td>
+        <td>{{ truck.rcStartDate }}</td>
+        <td>{{ truck.rcEndDate }}</td>
+        <td>{{ getDriverName(truck) }}</td> <!-- Display selected driver's name -->
+      </tr>
+    </tbody>
+  </table>
+</div>

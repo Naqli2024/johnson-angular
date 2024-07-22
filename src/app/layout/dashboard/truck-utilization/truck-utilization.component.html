@@ -1,0 +1,24 @@
+<div class="row parent-box">
+  <h2>Truck Utilization</h2>
+  <div class="col-lg-4">
+    <canvas id="doughnutchart"></canvas>
+  </div>
+  <div class="col-lg-4">
+    <div class="legend-container">
+      <div class="legend-item" *ngFor="let label of labeldata; let i = index">
+        <span
+          class="legend-color"
+          [style.background-color]="colordata[i]"
+        ></span>
+        <span>{{ label }}</span>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4">
+    <div class="legend-container">
+      <div class="legend-item" *ngFor="let label of labeldata; let i = index">
+        <span> {{ realdata[i] }} &nbsp; Vehicle</span>
+      </div>
+    </div>
+  </div>
+</div>

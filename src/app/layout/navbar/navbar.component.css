@@ -1,0 +1,32 @@
+.navbar {
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+span {
+    padding-right: 1rem;
+}
+.navbar-brand, .nav-link {
+    color: #000
+}
+.navbar-nav .nav-link {
+    padding: 0.5rem 1rem;
+}
+.navbar-text {
+    margin: 0;
+}
+.dropdown-menu .dropdown-item:focus, 
+.dropdown-menu .dropdown-item:hover {
+  background-color: #ddd !important; /* Remove blue background color */
+  color: #000;
+}
+.dropdown {
+    border: 1px solid #ddd;
+    padding: 0px;
+    border-radius: 10px;
+}
+.dropdown-menu {
+    padding: 0;
+  }
+.dropdown-item {
+    padding: 0.5rem 1rem; /* Add your desired padding */
+}

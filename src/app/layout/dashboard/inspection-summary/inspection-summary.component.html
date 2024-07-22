@@ -1,0 +1,9 @@
+<div class="row parent-box">
+    <h2>Inspection Summary</h2>
+    <apx-chart
+      [series]="chartOptions.series || [0]"
+      [chart]="chartOptions.chart || { height: 350, type: 'radialBar' }"
+      [labels]="chartOptions.labels || ['']"
+      [plotOptions]="chartOptions.plotOptions || { radialBar: { hollow: { size: '70%' } } }"
+    ></apx-chart>
+  </div>

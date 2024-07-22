@@ -1,0 +1,14 @@
+<div class="row parent-box" style="display: flex; flex-wrap: wrap;">
+  <h2>Safety</h2>
+  <ng-container *ngFor="let data of safetyData">
+    <div class="radial-bar-container" >
+      <apx-chart
+        [series]="[data.percentage]"
+        [chart]="{ type: 'radialBar', height: chartOptions.chart?.height || 200 }"
+        [plotOptions]="chartOptions.plotOptions"
+        [labels]="[data.drivers.toString()]" 
+      ></apx-chart>
+      <h3 style="text-align: center;">{{ data.name }}</h3>
+    </div>
+  </ng-container>
+</div>

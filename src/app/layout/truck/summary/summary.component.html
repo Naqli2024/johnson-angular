@@ -1,0 +1,42 @@
+<div class="container-fluid table-container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Registration no</th>
+        <th>Model</th>
+        <th>Insurance Expiry</th>
+        <th>Permit Expiry</th>
+        <th>RC Expiry</th>
+        <th>FC Expiry</th>
+        <th>Driver</th>
+        <th>Driver mobile no</th>
+        <th>Driving License</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let truck of filteredData">
+        <td>{{ truck.registrationNumber }}</td>
+        <td>{{ truck.model }}</td>
+        <td>{{ truck.insuranceEndDate }}</td>
+        <td>{{ truck.permitEndDate }}</td>
+        <td>{{ truck.rcEndDate }}</td>
+        <td>{{ truck.fcEndDate }}</td>
+        <td>
+          <ng-container *ngIf="getDriverDetails(truck) as driver">
+            {{ driver.firstName }} {{ driver.lastName }}
+          </ng-container>
+        </td>
+        <td>
+          <ng-container *ngIf="getDriverDetails(truck) as driver">
+            {{ driver.mobileNo }}
+          </ng-container>
+        </td>
+        <td>
+          <ng-container *ngIf="getDriverDetails(truck) as driver">
+            <a [href]="driver.drivingLicense" target="_blank">view</a>
+          </ng-container>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

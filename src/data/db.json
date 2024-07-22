@@ -1,0 +1,306 @@
+{
+  "truckDetails": {
+    "total": 94,
+    "available": 50,
+    "outOfService": 2
+  },
+  "driverDetails": {
+    "total": 88,
+    "available": 70,
+    "banned": 3
+  },
+  "tripsDetails": {
+    "finished": 104,
+    "live": 65,
+    "cancelled": 5
+  },
+  "truckutilizationdetails": [
+    {
+      "name": "Enroute",
+      "data": 32,
+      "colorcode": "violet",
+      "id": "a17e"
+    },
+    {
+      "name": "planned Stop",
+      "data": 12,
+      "colorcode": "blue",
+      "id": "aec6"
+    },
+    {
+      "name": "UnPlanned Stop",
+      "data": 8,
+      "colorcode": "green",
+      "id": "36a5"
+    },
+    {
+      "name": "Idling",
+      "data": 6,
+      "colorcode": "red",
+      "id": "9573"
+    },
+    {
+      "name": "Accident",
+      "data": 2,
+      "colorcode": "pink",
+      "id": "954e"
+    }
+  ],
+  "fleetfuel": [
+    {
+      "year": "Apr'24",
+      "amount": 3,
+      "id": "068e"
+    },
+    {
+      "year": "May'24",
+      "amount": 3,
+      "id": "7493"
+    },
+    {
+      "year": "Jun'24",
+      "amount": 0,
+      "id": "3098"
+    },
+    {
+      "year": "Jul'24",
+      "amount": 3,
+      "id": "dc4f"
+    },
+    {
+      "year": "Aug'24",
+      "amount": 0,
+      "id": "049a"
+    },
+    {
+      "year": "Sep'24",
+      "amount": 2,
+      "id": "70c9"
+    }
+  ],
+  "criticalfaults": {
+    "category": "PO171",
+    "count": 5
+  },
+  "fuelcost": [
+    {
+      "year": "Apr'24",
+      "amount": 10,
+      "colorcode": "#FFAE42",
+      "id": "88e6"
+    },
+    {
+      "year": "May'24",
+      "amount": 25,
+      "colorcode": "#FFAE42",
+      "id": "883b"
+    },
+    {
+      "year": "Jun'24",
+      "amount": 10,
+      "colorcode": "#FFAE42",
+      "id": "23e9"
+    },
+    {
+      "year": "Jul'24",
+      "amount": 28,
+      "colorcode": "#FFAE42",
+      "id": "9618"
+    },
+    {
+      "year": "Aug'24",
+      "amount": 18,
+      "colorcode": "#FFAE42",
+      "id": "2874"
+    },
+    {
+      "year": "Sep'24",
+      "amount": 22,
+      "colorcode": "#FFAE42",
+      "id": "c15c"
+    }
+  ],
+  "serviceremainders": {
+    "overdue": 31,
+    "duesoon": 10
+  },
+  "openissues": {
+    "overdue": 50,
+    "duesoon": 7
+  },
+  "safety": [
+    {
+      "name": "Speeding",
+      "percentage": 9.6,
+      "drivers": "6 drivers",
+      "id": "6834"
+    },
+    {
+      "name": "Harsh braking",
+      "percentage": 11.3,
+      "drivers": "11 drivers",
+      "id": "eedb"
+    },
+    {
+      "name": "After-hours vehicle usage",
+      "percentage": 5.3,
+      "drivers": "5 drivers",
+      "id": "ae07"
+    }
+  ],
+  "othercosts": [
+    {
+      "year": "Apr'24",
+      "amount": 200,
+      "colorcode": "#3769ce",
+      "id": "bb78"
+    },
+    {
+      "year": "May'24",
+      "amount": 600,
+      "colorcode": "#3769ce",
+      "id": "cec8"
+    },
+    {
+      "year": "Jun'24",
+      "amount": 200,
+      "colorcode": "#3769ce",
+      "id": "3558"
+    },
+    {
+      "year": "Jul'24",
+      "amount": 600,
+      "colorcode": "#3769ce",
+      "id": "1131"
+    },
+    {
+      "year": "Aug'24",
+      "amount": 600,
+      "colorcode": "#3769ce",
+      "id": "fc40"
+    },
+    {
+      "year": "Sep'24",
+      "amount": 600,
+      "colorcode": "#3769ce",
+      "id": "794d"
+    }
+  ],
+  "servicecosts": [
+    {
+      "year": "Apr'24",
+      "amount": 500,
+      "colorcode": "#3769ce",
+      "id": "6e5d"
+    },
+    {
+      "year": "May'24",
+      "amount": 1000,
+      "colorcode": "#3769ce",
+      "id": "7a37"
+    },
+    {
+      "year": "Jun'24",
+      "amount": 200,
+      "colorcode": "#3769ce",
+      "id": "77bf"
+    },
+    {
+      "year": "Jul'24",
+      "amount": 1500,
+      "colorcode": "#3769ce",
+      "id": "16d0"
+    },
+    {
+      "year": "Aug'24",
+      "amount": 1000,
+      "colorcode": "#3769ce",
+      "id": "cc67"
+    },
+    {
+      "year": "Sep'24",
+      "amount": 2000,
+      "colorcode": "#3769ce",
+      "id": "7572"
+    }
+  ],
+  "inspectionfailurerate": [
+    {
+      "name": "This week",
+      "percentage": 10.4,
+      "id": "46ec"
+    },
+    {
+      "name": "Change from last week",
+      "percentage": 0.5,
+      "id": "62fe"
+    }
+  ],
+  "addtruck": [
+    {
+      "id": "e17b",
+      "unit": "option1",
+      "unitClassification": "classification1",
+      "suClassification": "subClassification3",
+      "registrationNumber": "90876543",
+      "model": "Rc 123",
+      "year": "2023",
+      "permitNumber": "09876453",
+      "permitStartDate": "2024-06-04",
+      "permitEndDate": "2024-06-29",
+      "insuranceNumber": "98764790",
+      "insuranceStartDate": "2024-06-19",
+      "insuranceEndDate": "2024-07-05",
+      "fcNumber": "87654390",
+      "fcStartDate": "2024-06-08",
+      "fcEndDate": "2024-06-22",
+      "rcNumber": "76543276",
+      "rcStartDate": "2024-06-19",
+      "rcEndDate": "2024-07-06"
+    },
+    {
+      "id": "4e2d",
+      "unit": "option3",
+      "unitClassification": "classification2",
+      "suClassification": "subClassification3",
+      "registrationNumber": "90876578",
+      "model": "MW 342",
+      "year": "2022",
+      "permitNumber": "09876778",
+      "permitStartDate": "2024-05-30",
+      "permitEndDate": "2024-06-29",
+      "insuranceNumber": "98766578",
+      "insuranceStartDate": "2024-06-03",
+      "insuranceEndDate": "2024-06-28",
+      "fcNumber": "87654299",
+      "fcStartDate": "2024-06-13",
+      "fcEndDate": "2024-07-06",
+      "rcNumber": "76543567",
+      "rcStartDate": "2024-06-27",
+      "rcEndDate": "2024-07-05"
+    },
+    {
+      "id": "cb72",
+      "unit": "option2",
+      "unitClassification": "classification3",
+      "suClassification": "subClassification1",
+      "registrationNumber": "90876534",
+      "model": "MW 890",
+      "year": "2021",
+      "permitNumber": "09876556",
+      "permitStartDate": "2024-06-07",
+      "permitEndDate": "2024-06-15",
+      "insuranceNumber": "98766890",
+      "insuranceStartDate": "2024-06-14",
+      "insuranceEndDate": "2024-06-27",
+      "fcNumber": "87650000",
+      "fcStartDate": "2024-06-01",
+      "fcEndDate": "2024-06-22",
+      "rcNumber": "76540000",
+      "rcStartDate": "2024-06-14",
+      "rcEndDate": "2024-07-06"
+    }
+  ],
+  "addDriver": [],
+  "selectedDriver": []
+}

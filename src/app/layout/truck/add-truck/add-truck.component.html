@@ -1,0 +1,18 @@
+<div class="container p-5">
+  <form [formGroup]="userForm" (ngSubmit)="onSubmit()" class="form-container">
+    <div class="form-group" *ngFor="let field of formFields">
+      <label [for]="field.key">{{ field.label }}</label>
+      <!-- For dropdowns, use select element -->
+      <select [id]="field.key" [formControlName]="field.key" class="form-select" *ngIf="field.type === 'dropdown'">
+        <option value="" selected disabled>Select {{ field.label }}</option>
+        <option *ngFor="let option of field.options" [value]="option.value">{{ option.label }}</option>
+      </select>
+      <!-- For other input types, use input element -->
+      <input *ngIf="field.type !== 'dropdown'" [type]="field.type" [id]="field.key" [formControlName]="field.key" class="form-control" />
+      <div *ngIf="userForm.controls[field.key].invalid && userForm.controls[field.key].touched" class="text-danger">
+        {{ field.label }} is required.
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="userForm.invalid">Submit</button>
+  </form>
+</div>
